@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 const path = require('path');
 
 module.exports = {
@@ -72,6 +73,7 @@ module.exports = {
       filename: 'static/css/[name].[hash:8].css',
       chunkFilename: 'static/css/[id].[hash:8].css'
     }),
+    new Dotenv(),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
