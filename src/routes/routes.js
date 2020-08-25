@@ -6,7 +6,9 @@ import Layout from '../layout';
 function Routes() {
   return (
     <Router>
-      
+      <Layout>
+        <div>content</div>
+      </Layout>
     </Router>
   );
 }
