@@ -5,11 +5,19 @@ import { FiMenu, FiUser, FiX } from 'react-icons/fi';
 import { Wrapper, FlexBox } from '../../styles';
 
 const Content = styled.header`
+  width: 100%;
   color: white;
   padding: 0.5em 0;
   box-sizing: border-box;
-  background-color: #151b26;
+  /* background-color: #151b26; */
   border-bottom: 1px solid #ffffff26;
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  @media (max-width: 576px){
+    
+  }
 `;
 
 const Primary = styled.div`

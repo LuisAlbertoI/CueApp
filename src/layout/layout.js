@@ -5,9 +5,9 @@ import { Header, Footer } from './components';
 const Content = styled.div`
   display: grid;
   box-sizing: border-box;
-  grid-template: auto minmax(calc(100vh - 7em), auto) auto / 1fr;
+  grid-template: auto minmax(calc(100vh - 7.5em), auto) auto / 1fr;
   @media (max-width: 576px){
-    grid-template: auto minmax(calc(100vh - 13em), auto) auto / 1fr;
+    grid-template: auto minmax(calc(100vh - 14em), auto) auto / 1fr;
   }
 `;
 
